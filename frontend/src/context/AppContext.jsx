@@ -101,6 +101,7 @@ export const AppProvider = ({ children }) => {
     socket.on("taskAssigned", (updatedTask) => {
       setTasks((prev) => {
         const exists = prev.find((task) => task._id === updatedTask._id);
+        
         if (exists) {
           return prev.map((task) =>
             task._id === updatedTask._id ? updatedTask : task
