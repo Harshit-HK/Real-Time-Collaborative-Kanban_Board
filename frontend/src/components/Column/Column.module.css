@@ -1,0 +1,69 @@
+.columnWrapper {
+  flex: 0 0 30%;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.columnHeader {
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid currentColor;
+}
+
+.columnHeader h3 {
+  margin: 0;
+}
+
+.count {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.taskList {
+  padding: 10px;
+  background-color: var(--column-bg);
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Hide scrollbar on WebKit browsers */
+.taskList::-webkit-scrollbar {
+  width: 6px;
+}
+.taskList::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+/* Mobile: allow horizontal scroll inside the column */
+@media (max-width: 768px) {
+  .columnWrapper {
+    flex: 1 1 100%;
+    width: 100%;
+    height: 26vh;
+  }
+
+  .taskList {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 12px;
+  }
+}

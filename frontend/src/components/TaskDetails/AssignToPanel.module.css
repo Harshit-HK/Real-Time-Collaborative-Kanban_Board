@@ -1,0 +1,42 @@
+
+.assignPanel {
+  margin-top: 1rem;
+  background-color: #fff9c4;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #fdd835;
+}
+
+.assignPanel h4 {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.assignPanel select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.saveBtn {
+  background-color: #43a047;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}

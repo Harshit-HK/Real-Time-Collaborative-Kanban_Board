@@ -1,0 +1,116 @@
+.panel {
+  background-color: #fff8e1;
+  box-sizing: border-box;
+  width: 280px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  top: 60px;
+  left: 0;
+  padding: 1rem;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  border-right: 2px solid #e0e0e0;
+  overflow-y: auto;
+  z-index: 999;
+  transform: translateX(0);
+  transition: transform 0.4s ease-in-out;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 0; 
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.closeBtn {
+  background: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #1976d2;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.closeBtn:hover {
+  background-color: #bbdefb;
+}
+
+.taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.taskItem {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background-color: #e3f2fd; 
+  margin-bottom: 14px;
+  transition: background-color 0.3s ease;
+  border-left: 4px solid #1976d2;
+  cursor: pointer;
+}
+
+.taskItem:hover {
+  background-color: #bbdefb;
+}
+
+.empty {
+  color: #888;
+  font-size: 14px;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .panel {
+    width: 90vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    background-color: #e4f6fc;
+    border-radius: 0;
+    box-shadow: none;
+    transform: translateX(-100%);
+  }
+
+  .mobile {
+    transform: translateX(0);
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #c62828;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease;
+  }
+}
