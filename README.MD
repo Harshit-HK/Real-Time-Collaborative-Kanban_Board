@@ -6,7 +6,7 @@ A full-stack real-time Kanban board application built for efficient team collabo
 
 ## 🚀 Live Demo & Video
 
-- 🔗 **Live App**: [https://your-deployed-app-link.com](https://your-deployed-app-link.com)
+- 🔗 [**Live App**:](https://real-time-collaborative-kanban-boar.vercel.app/login)
 - 🎥 **Demo Video**: [https://your-demo-video-link.com](https://your-demo-video-link.com)
 
 ---
